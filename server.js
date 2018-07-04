@@ -46,8 +46,8 @@ mongoose.connect("mongodb://localhost/mongoscraper");
 var db = mongoose.connection;
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
+// mongoose.Promise = Promise;
+// mongoose.connect(MONGODB_URI);
 
 // Show any mongoose errors
 db.on("error", function(error) {
